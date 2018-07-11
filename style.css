@@ -1,0 +1,203 @@
+/*  
+================================== 
+        Intro to Flexbox 
+================================== 
+*/
+
+body {
+    background: gray;
+    color: #fff;
+    margin: 0;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+.red {
+    background: red;
+}
+
+.green {
+    background: green;
+}
+
+.blue {
+    background: blue;
+} 
+
+.white {
+    background: #fff;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.header {
+    margin-bottom: 10px;
+}
+
+.header img {
+    max-width: 960px;
+}
+
+form {
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    background: blue;
+
+}
+.form-row {
+    padding: 10px 0;
+    display: flex;
+}
+
+.form-row label {
+    padding-right:  10px;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+.content {
+    background: white;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.content-single {
+    padding: 5px 10px;
+}
+
+.content-left {
+    flex: 1;
+    order: 1;
+}
+
+.content-center {
+    flex: 2;
+    order: 2;
+}
+
+.content-right {
+    flex: 1;
+    order: 3;
+}
+
+.feature {
+    margin: 40px auto 0 auto;
+    
+  /* align-items: flex-start; if dont want equal height */
+}
+
+.feature-single {
+    box-sizing: border-box;
+    flex-basis: 32%;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+
+.fixed-size-container {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.fixed-size {
+    width: 150px;
+    height: 100px;
+    background: red;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 100%;
+    margin: 20px;
+}
+
+.fixed-size h2 {
+    margin: auto;
+    padding-top: 20px;
+}
+
+.banner {
+    height: 400px;
+    max-width: 100%;
+    margin: 40px auto;
+    background: #2a2a2a;
+    color: #fff;
+    display: flex;
+}
+
+.center-me {
+    font-size: 50px;
+    margin: auto;
+}
+
+.equal-height {
+    margin: 0 auto;
+}
+
+.first {
+    background: white;
+    color: gray;
+    padding: 5px 10px;
+    flex: 1;
+}
+
+.second {
+    flex: 1;
+    background: yellow;
+    
+}
+
+.second-a {
+    background: lightseagreen;
+    height: 200px;
+}
+
+.second-b {
+    background: lightblue;
+    height: 200px;
+}
+
+@media (min-width: 900px) {
+    .content {
+        display: flex;
+    }
+
+    .feature {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .equal-height {
+        display: flex;
+    }
+
+    .second {
+        flex: 1;
+        background: yellow;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-a {
+        background: lightseagreen;
+        flex: 1;
+    }
+
+    .second-b {
+        background: lightblue;
+        flex: 1;
+    }
+}
