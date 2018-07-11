@@ -63,7 +63,7 @@ form {
 .content {
     background: white;
     color: gray;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 .content-single {
@@ -86,7 +86,7 @@ form {
 }
 
 .feature {
-    margin: 40px auto 0 auto;
+    margin: 0 auto;
     
   /* align-items: flex-start; if dont want equal height */
 }
@@ -129,7 +129,7 @@ form {
 .banner {
     height: 400px;
     max-width: 100%;
-    margin: 40px auto;
+    margin: 0 auto;
     background: #2a2a2a;
     color: #fff;
     display: flex;
@@ -181,6 +181,7 @@ form {
 
     .content {
         display: flex;
+        margin-bottom: 20px;
     }
 
     .feature {
@@ -190,6 +191,10 @@ form {
 
     .feature-single {
         margin-bottom: 20px;
+    }
+
+    .banner {
+        margin: 20px auto;
     }
 
     .equal-height {
